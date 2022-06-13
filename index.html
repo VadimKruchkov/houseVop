@@ -5,32 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HouseVop</title>
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body style="background-color: rgb(136, 136, 136)">
-    <header>
+  <body>
+    <header class="header">
       <a href="/"><img src="images/first-screen__logo.svg" alt="Логотип" /></a>
 
       <nav>
-        <ul>
-          <li>
-            <a href="">Про комплекс</a>
+        <ul class="menu">
+          clas
+          <li class="menu-item">
+            <a class="menu-link" href="">Про комплекс</a>
           </li>
-          <li>
-            <a href="">Район</a>
+          <li class="menu-item">
+            <a class="menu-link" href="">Район</a>
           </li>
-          <li>
-            <a href="">Каталог квартир</a>
+          <li class="menu-item">
+            <a class="menu-link" href="">Каталог квартир</a>
+            <ul class="submenu">
+              <li><a class="submenu-link" href="">Стандарт</a></li>
+              <li><a class="submenu-link" href="">Комфорт</a></li>
+              <li><a class="submenu-link" href="">Люкс</a></li>
+              <li><a class="submenu-link" href="">Супер Люкс</a></li>
+            </ul>
           </li>
-          <li>
-            <a href="">Іпотека</a>
+          <li class="menu-item">
+            <a class="menu-link" href="">Іпотека</a>
           </li>
-          <li>
-            <a href="">Контакти</a>
+          <li class="menu-item">
+            <a class="menu-link" href="">Контакти</a>
           </li>
         </ul>
       </nav>
       <section>
-        <h1>Житловий комплекс в історичному центрі</h1>
+        <h1 class="title">Житловий комплекс в історичному центрі</h1>
         <a href="#">
           <img src="images/mouse.svg" alt="Компьютерна миша" />
         </a>
@@ -122,7 +130,7 @@
           фанатазії придумати щось нове - вже немає. Якщо у когось є ідея -
           завжди велкам!
         </p>
-        <button type="button">Подивитись Район</button>
+        <button class="button" type="button">Подивитись Район</button>
       </section>
     </header>
     <main>
