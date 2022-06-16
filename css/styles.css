@@ -1,11 +1,35 @@
-root {
+:root {
+  --color-primary: #fff;
   --color-accent: #d4c17f;
+
+  --color-background-primary: #242b33;
+
+  --font-family-primary: "Raleway", sans-serif;
+  --font-family-title: "Playfair Display", serif;
+}
+body {
+  color: var(--color-primary);
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: var(--font-family-primary);
+  font-weight: 400;
+  background-color: var(--color-background-primary);
+}
+::selection{
+  color: var(--color-primary);
+  background-color: var(--color-accent);
+}
+.title {
+  font-family: var(--font-family-title);
+  color: var(--color-accent);
+  font-family: var(--font-family-title);
+  font-size: 36px;
+  line-height:1.3333;
 }
 header {
-  background-color: black;
+  background-color: rgb(87, 87, 87);
 }
 .submenu .submenu-item {
-  color: green;
 }
 .button {
   padding: 10px 40px;
@@ -16,15 +40,30 @@ header {
 .button:hover {
   background-color: red;
   box-shadow: 0px 0px 4px 4px rgba(250, 52, 2, 0.925);
+  font-size: 24px;
 }
-.menu-link,
-.submenu-link {
-  background-color: aqua;
+
+.link{
+  color: var(--color-primary);
+  font-size: 14px;
+  line-height: 1.15;
+  text-decoration: none;
 }
-.menu-link:hover,
-.submenu-link:hover {
-  background-color: var(--color-accent);
+.link:hover,
+.link:hover {
+  color: var(--color-accent);
+  text-decoration: underline;
 }
-.title {
-  background-color: var(--color-accent);
+
+  /*hero*/
+  .hero-title {
+    font-size: 48px;
+    text-align: center;
+    color: var(--color-accent);
+
+  }
+}
+/*footer*/
+.foter-contacts {
+  font-style: normal;
 }

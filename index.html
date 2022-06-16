@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HouseVop</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
@@ -12,43 +17,42 @@
       <a href="/"><img src="images/first-screen__logo.svg" alt="Логотип" /></a>
 
       <nav>
-        <ul class="menu">
-          clas
-          <li class="menu-item">
-            <a class="menu-link" href="">Про комплекс</a>
+        <ul class="header-menu">
+          <li class="header-menu-item">
+            <a class="link" href="">Про комплекс</a>
           </li>
-          <li class="menu-item">
-            <a class="menu-link" href="">Район</a>
+          <li class="header-menu-item">
+            <a class="link" href="">Район</a>
           </li>
-          <li class="menu-item">
-            <a class="menu-link" href="">Каталог квартир</a>
+          <li class="header-menu-item">
+            <a class="link" href="">Каталог квартир</a>
             <ul class="submenu">
-              <li><a class="submenu-link" href="">Стандарт</a></li>
-              <li><a class="submenu-link" href="">Комфорт</a></li>
-              <li><a class="submenu-link" href="">Люкс</a></li>
-              <li><a class="submenu-link" href="">Супер Люкс</a></li>
+              <li><a class="link" href="">Стандарт</a></li>
+              <li><a class="link" href="">Комфорт</a></li>
+              <li><a class="link" href="">Люкс</a></li>
+              <li><a class="link" href="">Супер Люкс</a></li>
             </ul>
           </li>
-          <li class="menu-item">
-            <a class="menu-link" href="">Іпотека</a>
+          <li class="header-menu-item">
+            <a class="link" href="">Іпотека</a>
           </li>
-          <li class="menu-item">
-            <a class="menu-link" href="">Контакти</a>
+          <li class="header-menu-item">
+            <a class="link" href="">Контакти</a>
           </li>
         </ul>
       </nav>
       <section>
-        <h1 class="title">Житловий комплекс в історичному центрі</h1>
+        <h1 class="hero-title">Житловий комплекс в історичному центрі</h1>
         <a href="#">
           <img src="images/mouse.svg" alt="Компьютерна миша" />
         </a>
         <address>
-          <a href="#">вул. Садова 10-15</a>
-          <a href="tel:+380991234567">+38 (099) 123-45-67</a>
+          <a href="#" class="link">вул. Садова 10-15</a>
+          <a href="tel:+380991234567" class="link">+38 (099) 123-45-67</a>
         </address>
       </section>
       <section>
-        <h2>Наші переваги</h2>
+        <h2 class="title">Наші переваги</h2>
         <ul>
           <li>
             <a href=""><img src="images/Group.svg" alt="Лого парки" /></a
@@ -76,7 +80,7 @@
         </ul>
       </section>
       <section>
-        <h2>Ціни</h2>
+        <h2 class="title">Ціни</h2>
         <table>
           <caption>
             Каталог типів за ціною
@@ -120,7 +124,7 @@
         </table>
       </section>
       <section>
-        <h2>Хочете подивитися?</h2>
+        <h2 class="title">Хочете подивитися?</h2>
         <p>
           Житловий комплекс в історичному центрі міста HouseVOP завершив
           будівництво та здав об’єкт в експлаутацію
@@ -135,7 +139,7 @@
     </header>
     <main>
       <section>
-        <h2>Район на мапі</h2>
+        <h2 class="title">Район на мапі</h2>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3047.181146913437!2d-47.895958193237796!3d-15.792998752319862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smelia%20brazil%2021!5e0!3m2!1sru!2sua!4v1654711171410!5m2!1sru!2sua"
           width="600"
@@ -149,7 +153,7 @@
         >
       </section>
       <section>
-        <h2>Відео огляд</h2>
+        <h2 class="title">Відео огляд</h2>
         <video src="">
           <source src="" />
           <source src="" />
@@ -158,12 +162,23 @@
       </section>
     </main>
     <footer>
-      <address>
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
+      <address class="footer-contacts">
+        <ul class="footer-menu">
+          <li class="footer-menu-item">
+            <a class="link" href="">Про комплекс</a>
+          </li>
+          <li class="footer-menu-item">
+            <a class="link" href="">Район</a>
+          </li>
+          <li class="footer-menu-item">
+            <a class="link" href="">Каталог квартир</a>
+          </li>
+          <li class="footer-menu-item">
+            <a class="link" href="">Іпотека</a>
+          </li>
+          <li class="footer-menu-item">
+            <a class="link" href="">Контакти</a>
+          </li>
         </ul>
         <ul>
           <li><a>Адреса: вул. Садова 10-15</a></li>
