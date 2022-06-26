@@ -14,179 +14,277 @@
   </head>
   <body>
     <header class="header">
-      <a href="/"><img src="images/first-screen__logo.svg" alt="Логотип" /></a>
+      <div class="container">
+        <div class="header-inner">
+          <a href="/"
+            ><img src="images/first-screen__logo.svg" alt="Логотип"
+          /></a>
 
-      <nav>
-        <ul class="header-menu">
-          <li class="header-menu-item">
-            <a class="link" href="">Про комплекс</a>
-          </li>
-          <li class="header-menu-item">
-            <a class="link" href="">Район</a>
-          </li>
-          <li class="header-menu-item">
-            <a class="link" href="">Каталог квартир</a>
-            <ul class="submenu">
-              <li><a class="link" href="">Стандарт</a></li>
-              <li><a class="link" href="">Комфорт</a></li>
-              <li><a class="link" href="">Люкс</a></li>
-              <li><a class="link" href="">Супер Люкс</a></li>
+          <nav>
+            <ul class="header-menu">
+              <li class="header-menu-item">
+                <a class="link" href="">Про комплекс</a>
+              </li>
+              <li class="header-menu-item">
+                <a class="link" href="">Район</a>
+              </li>
+              <li class="header-menu-item">
+                <a class="link" href="">Каталог квартир</a>
+                <ul class="submenu">
+                  <li><a class="link" href="">Стандарт</a></li>
+                  <li><a class="link" href="">Комфорт</a></li>
+                  <li><a class="link" href="">Люкс</a></li>
+                  <li><a class="link" href="">Супер Люкс</a></li>
+                </ul>
+              </li>
+              <li class="header-menu-item">
+                <a class="link" href="">Іпотека</a>
+              </li>
+              <li class="header-menu-item">
+                <a class="link" href="">Контакти</a>
+              </li>
             </ul>
-          </li>
-          <li class="header-menu-item">
-            <a class="link" href="">Іпотека</a>
-          </li>
-          <li class="header-menu-item">
-            <a class="link" href="">Контакти</a>
-          </li>
-        </ul>
-      </nav>
-      <section>
-        <h1 class="hero-title">Житловий комплекс в історичному центрі</h1>
-        <a href="#">
-          <img src="images/mouse.svg" alt="Компьютерна миша" />
-        </a>
-        <address>
-          <a href="#" class="link">вул. Садова 10-15</a>
-          <a href="tel:+380991234567" class="link">+38 (099) 123-45-67</a>
-        </address>
-      </section>
-      <section>
-        <h2 class="title">Наші переваги</h2>
-        <ul>
-          <li>
-            <a href=""><img src="images/Group.svg" alt="Лого парки" /></a
-            ><span>Поряд історичні парки та сквери</span>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <a href=""></a><img src="images/Group (1).svg" alt="будинок" /><span
-              >Повністю облаштований</span
+          </nav>
+        </div>
+      </div>
+      <section class="hero-section section">
+        <div class="container">
+          <h1 class="hero-section-title title">
+            Житловий комплекс в історичному центрі
+          </h1>
+          <a class="hero-section-mouse" href="#">
+            <img src="images/mouse.svg" alt="Компьютерна миша" />
+          </a>
+          <address class="contacts">
+            <a href="#" class="contacts-item link"
+              ><img
+                class="contacts-img"
+                src="/images/icons/logonav.svg"
+                aria-hidden="true"
+                alt=""
+              />
+              вул. Садова 10-15</a
             >
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <a href=""><img src="images/Group (2).svg" alt="фонтани" /></a
-            ><span>10 фонтанів на території</span>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <a href=""><img src="images/Group (3).svg" alt="велодоріжек" /></a
-            ><span>6 км велодоріжек</span>
-          </li>
-        </ul>
+            <a href="tel:+380991234567" class="contacs-item link"
+              ><img
+                class="contacts-img"
+                src="/images/icons/logotel.svg"
+                aria-hidden="true"
+                alt=""
+              />
+              +38 (099) 123-45-67</a
+            >
+          </address>
+        </div>
       </section>
-      <section>
-        <h2 class="title">Ціни</h2>
-        <table>
-          <caption>
-            Каталог типів за ціною
-          </caption>
-          <thead>
-            <tr>
-              <th>Квартира</th>
-              <th>Поверховість</th>
-              <th>Ціна</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Стандарт</td>
-              <td>1</td>
-              <td>30000$</td>
-            </tr>
-            <tr>
-              <td>Комфорт</td>
-              <td>2</td>
-              <td>40000$</td>
-            </tr>
-            <tr>
-              <td>Люкс</td>
-              <td>3</td>
-              <td>50000$</td>
-            </tr>
-            <tr>
-              <td>Суперлюкс</td>
-              <td>4</td>
-              <td>60000$</td>
-            </tr>
-          </tbody>
-          <tfoot>
-            <tr>
-              <td>Разом</td>
-              <td>10</td>
-              <td>180000$</td>
-            </tr>
-          </tfoot>
-        </table>
+      <section class="section">
+        <div class="container">
+          <h2 class="title" hidden>Наші переваги</h2>
+          <div class="our-advantages">
+            <ul>
+              <li>
+                <a href=""><img src="images/Group.svg" alt="Лого парки" /></a
+                ><span>Поряд історичні парки та сквери</span>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <a href=""></a
+                ><img src="images/Group (1).svg" alt="будинок" /><span
+                  >Повністю облаштований</span
+                >
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <a href=""><img src="images/Group (2).svg" alt="фонтани" /></a
+                ><span>10 фонтанів на території</span>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <a href=""
+                  ><img src="images/Group (3).svg" alt="велодоріжек" /></a
+                ><span>6 км велодоріжек</span>
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
-      <section>
-        <h2 class="title">Хочете подивитися?</h2>
-        <p>
-          Житловий комплекс в історичному центрі міста HouseVOP завершив
-          будівництво та здав об’єкт в експлаутацію
-          <time datetime="2021-03-11"> 11 березня 2021 року</time>. Якщо ви
-          маєте бажання подивитися квартиру, чекаємо на Вас. Тут просто повинен
-          бути будь-який текст, для того щоб збільшити його об’єм, тому що
-          фанатазії придумати щось нове - вже немає. Якщо у когось є ідея -
-          завжди велкам!
-        </p>
-        <button class="button" type="button">Подивитись Район</button>
+      <section class="section">
+        <div class="container">
+          <h2 class="title">Ціни</h2>
+          <table class="prices-table">
+            <caption>
+              Каталог типів за ціною
+            </caption>
+            <thead>
+              <tr>
+                <th>Квартира</th>
+                <th>Поверховість</th>
+                <th>Ціна</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Стандарт</td>
+                <td>1</td>
+                <td>30000$</td>
+              </tr>
+              <tr>
+                <td>Комфорт</td>
+                <td>2</td>
+                <td>40000$</td>
+              </tr>
+              <tr>
+                <td>Люкс</td>
+                <td>3</td>
+                <td>50000$</td>
+              </tr>
+              <tr>
+                <td>Суперлюкс</td>
+                <td>4</td>
+                <td>60000$</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td>Разом</td>
+                <td>10</td>
+                <td>180000$</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <h2 class="title">Хочете подивитися?</h2>
+          <p>
+            Житловий комплекс в історичному центрі міста HouseVOP завершив
+            будівництво та здав об’єкт в експлаутацію
+            <time datetime="2021-03-11"> 11 березня 2021 року</time>. Якщо ви
+            маєте бажання подивитися квартиру, чекаємо на Вас. Тут просто
+            повинен бути будь-який текст, для того щоб збільшити його об’єм,
+            тому що фанатазії придумати щось нове - вже немає. Якщо у когось є
+            ідея - завжди велкам!
+          </p>
+          <button class="button" type="button">Подивитись Район</button>
+        </div>
       </section>
     </header>
     <main>
-      <section>
-        <h2 class="title">Район на мапі</h2>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3047.181146913437!2d-47.895958193237796!3d-15.792998752319862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smelia%20brazil%2021!5e0!3m2!1sru!2sua!4v1654711171410!5m2!1sru!2sua"
-          width="600"
-          height="450"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          allowfullscreen
-          >" frameborder="0"></iframe
-        >
+      <section class="section">
+        <div class="container">
+          <h2 class="title">Район на мапі</h2>
+          <iframe
+            class="map-gogle"
+            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3047.181146913437!2d-47.895958193237796!3d-15.792998752319862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smelia%20brazil%2021!5e0!3m2!1sru!2sua!4v1654711171410!5m2!1sru!2sua"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen
+            >" frameborder="0"></iframe
+          >
+        </div>
       </section>
-      <section>
-        <h2 class="title">Відео огляд</h2>
-        <video src="">
-          <source src="" />
-          <source src="" />
-          Нажаль, це відео не підтримуеться вашим браузером
-        </video>
+      <section class="section">
+        <div class="container">
+          <h2 class="title">Відео огляд</h2>
+          <video src="">
+            <source src="" />
+            <source src="" />
+            Нажаль, це відео не підтримуеться вашим браузером
+          </video>
+        </div>
       </section>
     </main>
-    <footer>
-      <address class="footer-contacts">
-        <ul class="footer-menu">
-          <li class="footer-menu-item">
-            <a class="link" href="">Про комплекс</a>
-          </li>
-          <li class="footer-menu-item">
-            <a class="link" href="">Район</a>
-          </li>
-          <li class="footer-menu-item">
-            <a class="link" href="">Каталог квартир</a>
-          </li>
-          <li class="footer-menu-item">
-            <a class="link" href="">Іпотека</a>
-          </li>
-          <li class="footer-menu-item">
-            <a class="link" href="">Контакти</a>
-          </li>
-        </ul>
-        <ul>
-          <li><a>Адреса: вул. Садова 10-15</a></li>
-          <li><a>Телефон: +38 (099) 123-45-67</a></li>
-          <li><a>Відділ продажу: 10:00 - 20:00</a></li>
-          <li><a>E-mail: vip@housevip.ru</a></li>
-        </ul>
-      </address>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-info">
+          <div class="footer-inner">
+            <a href="/"
+              ><img src="images/first-screen__logo.svg" alt="Логотип"
+            /></a>
+            <p>© 2022 Всі права захищені. HouseVOP</p>
+          </div>
+          <nav>
+            <ul class="footer-menu">
+              <li class="footer-menu-item">
+                <a class="link" href="">Про комплекс</a>
+              </li>
+              <li class="footer-menu-item">
+                <a class="link" href="">Район</a>
+              </li>
+              <li class="footer-menu-item">
+                <a class="link" href="">Каталог квартир</a>
+              </li>
+              <li class="footer-menu-item">
+                <a class="link" href="">Іпотека</a>
+              </li>
+              <li class="footer-menu-item">
+                <a class="link" href="">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="footer-contacts">
+            <ul>
+              <li>Адреса:<a class="link" href="#"> вул. Садова 10-15</a></li>
+              <li>
+                <a class="link" href="tel:+380991234567"
+                  >Телефон: +38 (099) 123-45-67</a
+                >
+              </li>
+              <li>
+                Відділ продажу:<time datetime="10:00">10:00</time> -
+                <time datetime="20:00">20:00</time>
+              </li>
+              <li>
+                E-mail:<a class="link" href="mailto:vip@housevip.ru ">
+                  vip@housevip.ru</a
+                >
+              </li>
+            </ul>
+            <ul class="socials">
+              <li>
+                <a class="socials-link" href="#"
+                  ><img
+                    class="socials-img"
+                    src="/images/icons/youtube.svg"
+                    alt="youtebe"
+                /></a>
+              </li>
+              <li>
+                <a class="socials-link" href="#"
+                  ><img
+                    class="socials-img"
+                    src="/images/icons/vk.svg"
+                    alt="vkontacte"
+                /></a>
+              </li>
+              <li>
+                <a class="socials-link" href="#"
+                  ><img
+                    class="socials-img"
+                    src="/images/icons/facebook.svg"
+                    alt="facebook"
+                /></a>
+              </li>
+              <li>
+                <a class="socials-link" href="#"
+                  ><img
+                    class="socials-img"
+                    src="/images/icons/instagram.svg"
+                    alt="instagram"
+                /></a>
+              </li>
+            </ul>
+          </address>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
