@@ -11,6 +11,10 @@
 p {
   margin: 0%;
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
 ul {
   margin: 0%;
   padding: 0%;
@@ -30,8 +34,9 @@ body {
 }
 .container {
   max-width: 100%;
-  width: 1100px;
+  width: 1142px;
   margin: 0 auto;
+  padding: 0 16px;
 }
 section {
   padding: 90px 0;
@@ -125,9 +130,27 @@ header {
   height: 20px;
   margin-right: 8px;
 }
+/*advantages*/
+
 .our-advantages {
   display: flex;
 }
+/*Flats*/
+
+.flats-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+.flats-item {
+  /* flex-basis: 50%; */
+  padding: 15px;
+}
+.flats-name {
+  display: block;
+}
+
 /*Price table*/
 
 .prices-table {
