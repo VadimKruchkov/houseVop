@@ -55,7 +55,7 @@ section {
   display: flex;
 }
 header {
-  background-color: rgb(87, 87, 87);
+  background-color: var(--color-background-primary);
 }
 .header-inner {
   display: flex;
@@ -102,6 +102,18 @@ header {
 
 /*hero*/
 .hero-section {
+  background-color: var(--color-background-primary);
+  background-image: linear-gradient(
+      180deg,
+      var(--color-background-primary) 6.56%,
+      rgba(36, 43, 51, 0.3) 50.31%,
+      var(--color-background-primary) 89.37%
+    ),
+    url("/images/Hero\ background-image.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
   text-align: center;
 }
 .hero-section-title {
@@ -112,7 +124,6 @@ header {
   color: var(--color-accent);
 }
 .hero-section-mouse {
-  margin-bottom: 200px;
 }
 /*contacts*/
 
@@ -120,6 +131,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  margin-top: 200px;
 }
 .contacts-item {
   display: flex;
@@ -170,6 +182,18 @@ header {
 .prices-table thead,
 .prices-table tfoot {
   background-color: rgba(255, 255, 255, 0.1);
+}
+tbody > tr:hover {
+  background-color: var(--color-accent);
+}
+/*Call-to-action*/
+.cta-section {
+  background-color: var(--color-background-primary);
+  background-image: url("/images/cta-bakground-image.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 /*Map*/
 
