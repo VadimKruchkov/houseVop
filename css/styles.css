@@ -11,9 +11,11 @@
 p {
   margin: 0%;
 }
-img {
+img,
+video {
   max-width: 100%;
   height: auto;
+  object-fit: cover;
 }
 ul {
   margin: 0%;
@@ -76,9 +78,9 @@ header {
   border: 1px solid #d4c17f;
 }
 .button:hover {
-  background-color: red;
-  box-shadow: 0px 0px 4px 4px rgba(250, 52, 2, 0.925);
-  font-size: 24px;
+  background-color: var(--color-accent);
+  box-shadow: 0px 1px 1px 4px var(--color-background-primary),
+    0px 0px 4px 4px var(--color-accent);
 }
 
 .link {
@@ -123,7 +125,10 @@ header {
   font-size: 48px;
   color: var(--color-accent);
 }
-.hero-section-mouse {
+.hero-section-mouse-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  fill: var(--color-accent);
 }
 /*contacts*/
 
@@ -137,16 +142,40 @@ header {
   display: flex;
   align-items: center;
 }
-.contacts-img {
-  width: 20px;
-  height: 20px;
-  margin-right: 8px;
-}
-/*advantages*/
 
-.our-advantages {
-  display: flex;
+.contacts-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.5rem;
+  fill: var(--color-primary);
 }
+.contacts-item:hover .contacts-icon {
+  fill: var(--color-accent);
+}
+
+/*Benefit*/
+
+.benefit-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+.benefit-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.benefit-icon {
+  width: 5rem;
+  height: 5rem;
+  margin-bottom: 3rem;
+  fill: var(--color-accent);
+}
+.benefit-caption {
+  display: block;
+}
+
 /*Flats*/
 
 .flats-list {
@@ -195,6 +224,19 @@ tbody > tr:hover {
   background-size: cover;
   background-attachment: fixed;
 }
+.cta-section-text {
+  margin-bottom: 24px;
+}
+
+/*video-section*/
+.video-section-inner {
+  width: 720px;
+  height: 650px;
+  margin: 0 auto;
+}
+.video-section-content {
+  object-fit: cover;
+}
 /*Map*/
 
 .section > title {
@@ -206,18 +248,22 @@ tbody > tr:hover {
 .map-gogle {
   width: 100%;
 }
-/*Socials*/
-.socials {
+/*Social*/
+.social {
   display: flex;
   align-items: center;
   margin-left: -10px;
 }
-.socials-link {
-  padding: 10px;
+.social-link {
+  padding: 0.5rem;
 }
-.socials-img {
-  width: 20px;
-  height: 20px;
+.social-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: var(--color-primary);
+}
+.social-link:hover .social-icon {
+  fill: var(--color-accent);
 }
 /*footer*/
 .footer {

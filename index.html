@@ -53,25 +53,24 @@
             Житловий комплекс в історичному центрі
           </h1>
           <a class="hero-section-mouse" href="#">
-            <img src="images/mouse.svg" alt="Компьютерна миша" />
+            <svg
+              class="hero-section-mouse-icon"
+              aria-label="Перейти до наступної секції"
+            >
+              <use href="/images/icons/icons.svg#icon-mouse"></use>
+            </svg>
           </a>
           <address class="contacts">
-            <a href="#" class="contacts-item link"
-              ><img
-                class="contacts-img"
-                src="/images/icons/logonav.svg"
-                aria-hidden="true"
-                alt=""
-              />
+            <a href="#" class="contacts-item link">
+              <svg class="contacts-icon" aria-hidden="true">
+                <use href="/images/icons/icons.svg#icon-placeholder "></use>
+              </svg>
               вул. Садова 10-15</a
             >
-            <a href="tel:+380991234567" class="contacs-item link"
-              ><img
-                class="contacts-img"
-                src="/images/icons/logotel.svg"
-                aria-hidden="true"
-                alt=""
-              />
+            <a href="tel:+380991234567" class="contacts-item link"
+              ><svg class="contacts-icon" aria-hidden="true">
+                <use href="/images/icons/icons.svg#icon-phone-call "></use>
+              </svg>
               +38 (099) 123-45-67</a
             >
           </address>
@@ -81,31 +80,35 @@
         <div class="container">
           <h2 class="title" hidden>Наші переваги</h2>
           <div class="our-advantages">
-            <ul>
-              <li>
-                <a href=""><img src="images/Group.svg" alt="Лого парки" /></a
-                ><span>Поряд історичні парки та сквери</span>
+            <ul class="benefit-list">
+              <li class="benefit-item" >
+                      
+                  <svg class="benefit-icon " aria-hidden="true">
+                     <use href="/images/icons/icons.svg#icon-bench "></use>
+                  </svg>
+                <span class="benefit-caption">Поряд історичні парки та сквери</span>
               </li>
-            </ul>
-            <ul>
-              <li>
-                <a href=""></a
-                ><img src="images/Group (1).svg" alt="будинок" /><span
-                  >Повністю облаштований</span
-                >
+            
+            
+              <li class="benefit-item" >
+                <svg class="benefit-icon " aria-hidden="true">
+                  <use href="/images/icons/icons.svg#icon-building"></use>
+                </svg>
+                <span class="benefit-caption"
+                  >Повністю облаштований</span>
               </li>
-            </ul>
-            <ul>
-              <li>
-                <a href=""><img src="images/Group (2).svg" alt="фонтани" /></a
-                ><span>10 фонтанів на території</span>
+              <li class="benefit-item">
+                  <svg class="benefit-icon " aria-hidden="true">
+                     <use href="/images/icons/icons.svg#icon-fountain"></use>
+                  </svg>
+                    <span class="benefit-caption">10 фонтанів на території</span>
               </li>
-            </ul>
-            <ul>
-              <li>
-                <a href=""
-                  ><img src="images/Group (3).svg" alt="велодоріжек" /></a
-                ><span>6 км велодоріжек</span>
+              <li  class="benefit-item"> 
+                                          
+                  <svg class="benefit-icon " aria-hidden="true">
+                    <use href="/images/icons/icons.svg#icon-bicycle"></use>
+                  </svg>
+                   <span class="benefit-caption">6 км велодоріжек</span>
               </li>
             </ul>
           </div>
@@ -186,7 +189,7 @@
       <section class="cta-section section">
         <div class="container">
           <h2 class="title">Хочете подивитися?</h2>
-          <p>
+          <p class="cta-section-text">
             Житловий комплекс в історичному центрі міста HouseVOP завершив
             будівництво та здав об’єкт в експлаутацію
             <time datetime="2021-03-11"> 11 березня 2021 року</time>. Якщо ви
@@ -200,6 +203,23 @@
       </section>
     </header>
     <main>
+      <section class="video-section section">
+        <div class="container">
+          <h2 class="title" hidden>Відео огляд</h2>
+          <div class="video-section-inner">
+            <iframe
+              class="video-section-content"
+              width="720"
+              height="650"
+              src="https://www.youtube.com/embed/U1gRk22xhQU"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </section>
       <section class="section">
         <div class="container">
           <h2 class="title">Район на мапі</h2>
@@ -215,16 +235,6 @@
             allowfullscreen
             >" frameborder="0"></iframe
           >
-        </div>
-      </section>
-      <section class="section">
-        <div class="container">
-          <h2 class="title">Відео огляд</h2>
-          <video src="">
-            <source src="" />
-            <source src="" />
-            Нажаль, це відео не підтримуеться вашим браузером
-          </video>
         </div>
       </section>
     </main>
@@ -258,7 +268,7 @@
           </nav>
           <address class="footer-contacts">
             <ul>
-              <li>Адреса:<a class="link" href="#"> вул. Садова 10-15</a></li>
+              <li>Адреса:<a class="link" href="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3047.181146913437!2d-47.895958193237796!3d-15.792998752319862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smelia%20brazil%2021!5e0!3m2!1sru!2sua!4v1654711171410!5m2!1sru!2sua""> вул. Садова 10-15</a></li>
               <li>
                 <a class="link" href="tel:+380991234567"
                   >Телефон: +38 (099) 123-45-67</a
@@ -274,38 +284,37 @@
                 >
               </li>
             </ul>
-            <ul class="socials">
+            <ul class="social">
               <li>
-                <a class="socials-link" href="#"
-                  ><img
-                    class="socials-img"
-                    src="/images/icons/youtube.svg"
-                    alt="youtebe"
-                /></a>
+                <a class="social-link" href="#"
+                  ><svg class="social-icon" aria-label="Посилання на YouTube ">
+                    <use href="/images/icons/icons.svg#icon-YouTube "></use>
+                  </svg>
+                </a>
               </li>
               <li>
-                <a class="socials-link" href="#"
-                  ><img
-                    class="socials-img"
-                    src="/images/icons/vk.svg"
-                    alt="vkontacte"
-                /></a>
+                <a class="social-link" href="#"
+                  ><svg
+                    class="social-icon"
+                    aria-label="Посилання на Instagram "
+                  >
+                    <use href="/images/icons/icons.svg#icon-Instagram"></use>
+                  </svg>
+                </a>
               </li>
               <li>
-                <a class="socials-link" href="#"
-                  ><img
-                    class="socials-img"
-                    src="/images/icons/facebook.svg"
-                    alt="facebook"
-                /></a>
+                <a class="social-link" href="#"
+                  ><svg class="social-icon" aria-label="Посилання на Facebook ">
+                    <use href="/images/icons/icons.svg#icon-FB"></use>
+                  </svg>
+                </a>
               </li>
               <li>
-                <a class="socials-link" href="#"
-                  ><img
-                    class="socials-img"
-                    src="/images/icons/instagram.svg"
-                    alt="instagram"
-                /></a>
+                <a class="social-link" href="#"
+                  ><svg class="social-icon" aria-label="Посилання на Vkontakte">
+                    <use href="/images/icons/icons.svg#icon-VK "></use>
+                  </svg>
+                </a>
               </li>
             </ul>
           </address>
