@@ -8,6 +8,9 @@
   --font-family-primary: "Raleway", sans-serif;
   --font-family-title: "Playfair Display", serif;
 }
+html {
+  scroll-behavior: smooth;
+}
 p {
   margin: 0%;
 }
@@ -160,10 +163,12 @@ header {
   align-items: center;
   justify-content: center;
   gap: 4rem;
+  flex-wrap: wrap;
 }
 .benefit-item {
   display: flex;
   flex-direction: column;
+  text-align: center;
   align-items: center;
 }
 .benefit-icon {
@@ -173,7 +178,9 @@ header {
   fill: var(--color-accent);
 }
 .benefit-caption {
-  display: block;
+  max-width: 12rem;
+  justify-content: center;
+  text-align: center;
 }
 
 /*Flats*/
