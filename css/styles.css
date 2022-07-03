@@ -114,7 +114,7 @@ header {
       rgba(36, 43, 51, 0.3) 50.31%,
       var(--color-background-primary) 89.37%
     ),
-    url("/images/Hero\ background-image.jpg");
+    url("images/Hero\ background-image.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -225,7 +225,7 @@ tbody > tr:hover {
 /*Call-to-action*/
 .cta-section {
   background-color: var(--color-background-primary);
-  background-image: url("/images/cta-bakground-image.jpg");
+  background-image: url("images/cta-bakground-image.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
