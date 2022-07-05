@@ -26,12 +26,16 @@ ul {
   list-style-type: none;
 }
 body {
+  margin: 0;
   color: var(--color-primary);
   font-size: 16px;
   line-height: 1.5;
   font-family: var(--font-family-primary);
   font-weight: 400;
   background-color: var(--color-background-primary);
+}
+main {
+  margin-top: 124px;
 }
 ::selection {
   color: var(--color-primary);
@@ -60,6 +64,12 @@ section {
   display: flex;
 }
 header {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 27px 0;
   background-color: var(--color-background-primary);
 }
 .header-inner {
@@ -68,12 +78,15 @@ header {
   align-items: center;
 }
 .header-menu-item {
+  position: relative;
   display: flex;
   margin-right: 12px;
   padding: 8px 12px;
 }
-.submenu .submenu-item {
+.header-menu-item:hover .submenu {
+  display: block;
 }
+
 .button {
   padding: 10px 40px;
   background: var(--color-accent);
@@ -87,6 +100,7 @@ header {
 }
 
 .link {
+  padding: 8px 12px;
   color: var(--color-primary);
   font-size: 14px;
   line-height: 1.15;
@@ -99,22 +113,26 @@ header {
 }
 /*Submenu*/
 .submenu {
+  position: absolute;
+  top: 40px;
+  left: 8px;
+  background-color: var(--color-background-primary);
+  box-shadow: 0px 0px 2px 2px rgba(255, 255, 255, 0.25);
   display: none;
 }
-.header-menu-item:focus-within .submenu {
-  display: block;
+.submenu-link {
+  width: 100%;
+  padding: 6px 16px;
 }
-
 /*hero*/
 .hero-section {
-  background-color: var(--color-background-primary);
   background-image: linear-gradient(
       180deg,
       var(--color-background-primary) 6.56%,
       rgba(36, 43, 51, 0.3) 50.31%,
       var(--color-background-primary) 89.37%
     ),
-    url("images/Hero\ background-image.jpg");
+    url("../images/Hero-background-image.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -188,14 +206,33 @@ header {
 .flats-list {
   display: flex;
   flex-wrap: wrap;
-  margin: -15px;
+  margin: -16px;
 }
 
 .flats-item {
+  position: relative;
   /* flex-basis: 50%; */
-  padding: 15px;
+  padding: 16px;
+}
+.flats-item::before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    180deg,
+    #242b33 0%,
+    rgba(36, 43, 51, 0) 0.01%,
+    #242b33 100%
+  );
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 .flats-name {
+  position: absolute;
+  bottom: 40px;
+  left: 48px;
   display: block;
 }
 
@@ -225,7 +262,7 @@ tbody > tr:hover {
 /*Call-to-action*/
 .cta-section {
   background-color: var(--color-background-primary);
-  background-image: url("images/cta-bakground-image.jpg");
+  background-image: url("../images/cta-bakground-image.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
