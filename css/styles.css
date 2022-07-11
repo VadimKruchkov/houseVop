@@ -224,43 +224,54 @@ header {
 
 /*Flat*/
 
-.flat-list {
+.flat-section-list {
   display: flex;
   flex-wrap: wrap;
   margin: -16px;
 }
 
 .flat-section-item-wrap {
-  position: relative;
-  /* flex-basis: 50%; */
   padding: 16px;
 }
 .flat-section-item {
   position: relative;
+  flex-basis: 50%;
 }
-.flat-section-item-wrap:hover {
+
+.flat-section-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(
+    180deg,
+    transparent 0%,
+    var(--color-background-primary) 100%
+  );
+}
+
+.flat-section-img {
+  width: 100%;
+  height: 100%;
+}
+.flat-section-name {
+  position: absolute;
+  left: 31px;
+  bottom: 26px;
+  display: block;
 }
 .flat-section-overlay {
   position: absolute;
   top: 0;
   left: 0;
-
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(
-    180deg,
-    #242b33 0%,
-    rgba(36, 43, 51, 0) 0.01%,
-    #242b33 100%
-  );
+  padding: 1.5rem 2rem;
+  background-color: var(--color-background-primary);
+  transform: translateY(100%);
+  transition: transform 250ms;
 }
-.flat-name {
-  position: absolute;
-  bottom: 40px;
-  left: 48px;
-  display: block;
-}
-
 .flat-section-item:hover {
   transform: translateY(0);
 }
