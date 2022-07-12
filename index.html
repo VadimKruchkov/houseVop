@@ -348,7 +348,44 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-close-button" type="button" data-modal-close>x</button>
+       <div class="modal-inner">
+        <h2  class="modal-title title">Хочете подивитися?</h2>  
+        
+        <form class="form" name="main-form" autocomplete="on" novalidate>
+            <h3 class="form-field-title">Контактна інформація</h3>
+           <div class="form-field">
+             <label class="form-field-label" for="user-name"> Введіть ім’я *</label>
+             <input class="form-field-input" id="user-name" type="text" name="user-name" placeholder="Іван">
+           </div>
+           <div class="form-field">
+            <label class="form-field-label" for="user-email">Введіть e-mail *</label>
+            <input class="form-field-input" id="user-email" type="email" name="user-name" placeholder="example@mail.com">
+          </div>
+          <div class="form-field">
+            <label class="form-field-label" for="user-phone">Введіть телефон</label>
+            <input class="form-field-input" id="user-phone" type="tel" name="user-phone" placeholder="099 122 22 21">
+          </div>
+          <div class="form-field">
+            <label class="form-field-label" for="user-password">Введіть пароль</label>
+            <input class="form-field-input" id="user-password" type="password" name="user-password" placeholder="*****">
+          </div>
+          <h3 class="form-field-title">Інформація про квартиру</h3>
+          <div class="form-field">
+            <label class="form-field-label" for="flat-type">Оберіть тип квартири *</label>
+            <select class="form-field-input" name="flat-type" id="flat-type">
+              <option value="">Стандарт — 1 поверх</option>
+              <option value="">Комфорт — 2 поверхи</option>
+              <option value="">Люкс — 3 поверхи</option>
+              <option value="">Супер Люкс — 4 поверхи</option>
+            </select>
+           
+          </div>
 
+
+
+
+        </form>  
+       </div>
       </div>
     </div>
     <script src="./js/modal.js"></script>
