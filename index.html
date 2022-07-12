@@ -222,7 +222,7 @@
             тому що фанатазії придумати щось нове - вже немає. Якщо у когось є
             ідея - завжди велкам!
           </p>
-          <button class="button" type="button">Подивитись Район</button>
+          <button class="button" type="button" data-modal-open>Подивитись Район</button>
         </div>
       </section>
    
@@ -345,5 +345,12 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-close-button" type="button" data-modal-close>x</button>
+
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

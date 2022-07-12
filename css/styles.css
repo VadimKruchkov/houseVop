@@ -236,6 +236,8 @@ header {
 .flat-section-item {
   position: relative;
   flex-basis: 50%;
+  overflow: hidden;
+  cursor: pointer;
 }
 
 .flat-section-gradient {
@@ -267,13 +269,14 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 1.5rem 2rem;
+  padding: 1.5rem 1.5rem;
   background-color: var(--color-background-primary);
   transform: translateY(100%);
   transition: transform 250ms;
+  opacity: 0.8;
 }
-.flat-section-item:hover {
-  transform: translateY(0);
+.flat-section-item:hover .flat-section-overlay {
+  transform: translateY(0%);
 }
 
 /*Price table*/
@@ -365,4 +368,38 @@ tbody > tr:hover {
 }
 .foter-contacts {
   font-style: normal;
+}
+/*Modal*/
+.backdrop.is-hidden {
+}
+.backdrop {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(36, 43, 51, 0.6);
+  transition: opacity 500ms, visibility 500ms;
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 540px;
+  min-height: 600px;
+  background-color: var(--color-background-primary);
+  box-shadow: 0px 0px 6px 6px rgba(255, 255, 255, 0.25);
+  border-radius: 4px;
+}
+.modal-close-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
