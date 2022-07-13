@@ -31,10 +31,10 @@
               <li class="header-menu-item">
                 <a class="link" href="">Каталог квартир</a>
                 <ul class="submenu">
-                  <li><a class="submenu-link link" href="">Стандарт</a></li>
-                  <li><a class="submenu-link link" href="">Комфорт</a></li>
-                  <li><a class="submenu-link link" href="">Люкс</a></li>
-                  <li><a class="submenu-link link" href="">Супер Люкс</a></li>
+                  <li><a class="submenu-link link" href="#1">Стандарт</a></li>
+                  <li><a class="submenu-link link" href="#2">Комфорт</a></li>
+                  <li><a class="submenu-link link" href="#3">Люкс</a></li>
+                  <li><a class="submenu-link link" href="#4">Супер Люкс</a></li>
                 </ul>
               </li>
               <li class="header-menu-item">
@@ -120,7 +120,7 @@
           <h2 class="title">Наші квартири</h2>
           <ul class="flat-section-list">
             <li class="flat-section-item-wrap">
-              <div class="flat-section-item">
+              <div class="flat-section-item" id="1">
                 <img class="flat-section-img" src="images/стандарт.jpg" alt="стандарт" />
                 <div class="flat-section-gradient"></div>
                 <span class="flat-section-name">Стандарт — 1 поверх</span>
@@ -139,7 +139,7 @@
              
 
             <li class="flat-section-item-wrap">
-              <div class="flat-section-item">
+              <div class="flat-section-item" id="2">
               <img class="flat-section-img" src="images/комфорт.jpg" alt="комфорт" />
               <div class="flat-section-gradient"> </div> 
               <span class="flat-section-name">Комфорт — 2 поверхи</span>                                       
@@ -147,14 +147,14 @@
             </li>
 
             <li class="flat-section-item-wrap">
-              <div class="flat-section-item">
+              <div class="flat-section-item" id="3">
               <img class="flat-section-img" src="images/люкс.jpg" alt="" />
               <div class="flat-section-gradient"> </div>
               <span class="flat-section-name">Люкс — 3 поверхи</span>                                   
              </li>
 
             <li class="flat-section-item-wrap">
-              <div class="flat-section-item">
+              <div class="flat-section-item" id="4">
               <img class="flat-section-img" src="images/суперлюкс.jpg" alt="" />
               <div class="flat-section-gradient"></div> 
               <span class="flat-section-name">Супер Люкс — 4 поверхи</span>      
@@ -373,13 +373,38 @@
           <div class="form-field">
             <label class="form-field-label" for="flat-type">Оберіть тип квартири *</label>
             <select class="form-field-input" name="flat-type" id="flat-type">
-              <option value="">Стандарт — 1 поверх</option>
-              <option value="">Комфорт — 2 поверхи</option>
-              <option value="">Люкс — 3 поверхи</option>
-              <option value="">Супер Люкс — 4 поверхи</option>
+              <option value="1">Стандарт — 1 поверх</option>
+              <option value="2">Комфорт — 2 поверхи</option>
+              <option value="3" selected>Люкс — 3 поверхи</option>
+              <option value="4">Супер Люкс — 4 поверхи</option>
             </select>
-           
-          </div>
+         </div>
+         <div class="form-field">
+          <label class="form-field-label" for="flat-location">Наскільки вам зручне містознаходження?</label>
+          <input class="form-field-range" id="flat-location" type="range" name="flat-location" min="1" max="10" value="8" step="1">
+        </div>
+        <div class="form-field">
+          <label class="form-field-label" for="user-term">На який термін плануєте купувати житло?(від 1 до 100 років)</label>
+          <input class="form-field-input" id="user-term" type="number" name="user-password" min="1" max="100" value="10" step="1">
+        </div>
+        <div class="form-field">
+          <label class="form-field-label" for="flat-date">Оберіть дату і час перегляду квартири *</label>
+          <input class="form-field-input" id="flat-date" type="datetime-local" name="flat-date" >
+        </div>
+        <h3 class="form-field-title">Додаткова інформація</h3>
+        <div class="form-field">
+          <label class="form-field-label" for="user-comment">Введіть коментар</label>
+          <textarea class="form-field-input form-field-textarea" name="user-comment" id="user-comment"  rows="10" placeholder="Моє побажання..."></textarea> 
+        </div>
+        <div class="form-field">
+          <input  id="term-condition" type="checkbox" name="term-condition" >
+          <label  for="term-condition">Я згоден з правами використання введених особистих даних.</label>
+          
+        </div>
+        <div class="form-fild"><button class="form-field-button button" type="submit">Подивитись район</button></div>
+        
+        <p><i>Ми нікому не передаємо ваші дані.
+          І не зберігаємо ваш номер у базу.</i></p>
 
 
 
