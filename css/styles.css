@@ -64,9 +64,6 @@ section {
 
 /*header*/
 
-.header-menu {
-  display: flex;
-}
 header {
   position: fixed;
   z-index: 1;
@@ -76,18 +73,25 @@ header {
   padding: 27px 0;
   background-color: var(--color-background-primary);
 }
-.header-inner {
+.header__inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.header-menu-item {
+/*Menu*/
+.menu {
+  display: flex;
+}
+.menu__list {
+  display: flex;
+}
+.menu__item {
   position: relative;
   display: flex;
   margin-right: 12px;
   padding: 8px 12px;
 }
-.header-menu-item:hover .submenu {
+.menu__item:hover .submenu {
   display: block;
 }
 
@@ -283,7 +287,7 @@ header {
   transform: translateY(0%);
 }
 
-/*Price table*/
+/*Price table-------------------------------------------------*/
 
 .prices-table {
   width: 100%;
@@ -306,7 +310,7 @@ header {
 tbody > tr:hover {
   background-color: var(--color-accent);
 }
-/*Call-to-action*/
+/*Call-to-action---------------------------------------------*/
 .cta-section {
   background-color: var(--color-background-primary);
   background-image: url("../images/cta-bakground-image.jpg");
@@ -319,7 +323,7 @@ tbody > tr:hover {
   margin-bottom: 24px;
 }
 
-/*video-section*/
+/*video-section---------------------------------------------------*/
 .video-section-inner {
   width: 720px;
   height: 650px;
@@ -339,7 +343,7 @@ tbody > tr:hover {
 .map-gogle {
   width: 100%;
 }
-/*Social*/
+/*Social----------------------------------------------------------*/
 .social {
   display: flex;
   align-items: center;
@@ -353,10 +357,10 @@ tbody > tr:hover {
   height: 1.5rem;
   fill: var(--color-primary);
 }
-.social-link:hover .social-icon {
+.social-link:hover .social-icon:hover {
   fill: var(--color-accent);
 }
-/*footer*/
+/*footer------------------------------------------------*/
 .footer {
   padding: 48px 0;
   background-color: var(--color-background-secondary);
@@ -373,7 +377,7 @@ tbody > tr:hover {
 .foter-contacts {
   font-style: normal;
 }
-/*Form field*/
+/*Form field-----------------------------------------------*/
 .form-field {
   margin-bottom: 1.5rem;
 }
@@ -406,7 +410,7 @@ tbody > tr:hover {
 .form-field-button {
   width: 100%;
 }
-/*Modal*/
+/*Modal-----------------------------------------------------*/
 .backdrop.is-hidden {
 }
 .backdrop {
